@@ -1,4 +1,4 @@
-name: ShopScouter CI/CD
+name: ShopScouter CI/CD (Android Build)
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build-and-test:
+  build-android:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,5 +24,17 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests
-        run: npm test
+      - name: Set up Java & Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Build Android App
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug
+
+      - name: Upload APK (Artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShopScouter-debug-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
