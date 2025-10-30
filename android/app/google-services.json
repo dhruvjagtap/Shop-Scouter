@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "163765769261",
+    "project_id": "shop-scouter",
+    "storage_bucket": "shop-scouter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163765769261:android:cfa47560a3be0b632294a4",
+        "android_client_info": {
+          "package_name": "com.shopscouter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj6BqJGU_ipfK6f4nicbKR9h9DX7CgOk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163765769261:android:8378fc86c8361df82294a4",
+        "android_client_info": {
+          "package_name": "com.shopscouter.shop_scouter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj6BqJGU_ipfK6f4nicbKR9h9DX7CgOk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
